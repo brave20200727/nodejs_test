@@ -10,4 +10,4 @@ RUN npm install
 
 EXPOSE 8888
 
-CMD npm start
+CMD DEBUG=project:* npm start
