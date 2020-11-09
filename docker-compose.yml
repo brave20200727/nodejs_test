@@ -7,16 +7,9 @@ services:
             - 8888:8888
         volumes: 
             - ./node/project:/project
-    # node2:
-    #     build: ./node2
-    #     ports: 
-    #         - 8889:8888
-    #     volumes: 
-    #         - ./node2/project:/project
     nginx:
         build: ./nginx
         ports: 
             - 80:80
         depends_on:
             - node
-            # - node2
